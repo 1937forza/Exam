@@ -51,8 +51,13 @@ table {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header .navbar .box a {
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 header .navbar .navbar-nav .nav-item .nav-link {
@@ -64,29 +69,33 @@ header .navbar .navbar-nav .nav-item .nav-link:hover {
   color: #428BCA;
 }
 
+header .navbar .fa-mobile:before {
+  padding: 8px 15px;
+  content: "\f10b";
+  background-color: #428BCA;
+  border-radius: 50%;
+  font-size: 31px;
+}
+
 main #hero {
   background-image: url(../image/bigBG.jpg);
 }
 
 main .col-lg-6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 main .col-lg-6 h1 {
   color: #fff;
+  font-size: 72px;
 }
 
 main .col-lg-6 h5 {
   color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 27px;
 }
 
 main .button {
@@ -98,21 +107,49 @@ main #service {
   margin-top: 100px;
 }
 
-main #service .icon-box {
-  width: 100px;
-  height: 100px;
+main #service .fa-tablet:before {
+  padding: 46px 64px;
+  content: "\f10a";
+  background-color: #428BCA;
   border-radius: 50%;
-  position: relative;
+  color: white;
+  font-size: 46px;
 }
 
-main #service .icon-box i {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+main #service .fa-tablet:hover {
+  content: "\f10a";
+  color: #fff;
+  border-radius: 50%;
+  color: white;
+  font-size: 46px;
+}
+
+main #service .fa-pencil-alt:before {
+  content: "\f303";
+  background-color: #428BCA;
+  border-radius: 50%;
+  color: white;
+  font-size: 46px;
+  padding: 46px 64px;
+}
+
+main #service .fa-star:before {
+  content: "\f005";
+  background-color: #428BCA;
+  border-radius: 50%;
+  color: white;
+  font-size: 46px;
+  padding: 46px 64px;
+}
+
+main #service .card-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+main #service .card-body {
+  margin-top: 55px;
 }
 
 main #contact .btn-primary {

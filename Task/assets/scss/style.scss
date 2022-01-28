@@ -54,7 +54,12 @@ table {
 header{
     .navbar{
         .box{
-
+            a{
+                text-decoration: none;
+                font-size: 40px;
+                font-weight: 700;
+                
+            }
         }
         .navbar-nav{
             .nav-item{
@@ -67,6 +72,14 @@ header{
                     }
                 }
             }
+        }
+
+        .fa-mobile:before {
+            padding: 8px 15px;
+            content: "\f10b";
+            background-color: #428BCA;
+            border-radius: 50%;
+            font-size: 31px;
         }
     }
 }
@@ -82,9 +95,12 @@ main{
         flex-direction: column;
         h1{
             color: #fff;
+            font-size: 72px;
         }
         h5{
             color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 27px;
         }
     }
 
@@ -95,17 +111,54 @@ main{
 
     #service{
         margin-top: 100px;
-        .icon-box{
-            width: 100px;
-            height: 100px;
+        .fa-tablet:before {
+            padding: 46px 64px;
+            content: "\f10a";
+            background-color: #428BCA;
             border-radius: 50%;
-            position: relative;
+            color: white;
+            font-size: 46px;
 
-            i{
-                position: absolute;
-                display: flex;
-                align-items: center;
-            }
+
+        }
+
+        .fa-tablet:hover {
+            content: "\f10a";
+            color: #fff;
+            border-radius: 50%;
+            color: white;
+            font-size: 46px;
+
+
+        }
+
+        .fa-pencil-alt:before {
+            content: "\f303";
+            background-color: #428BCA;
+            border-radius: 50%;
+            color: white;
+            font-size: 46px;
+            padding: 46px 64px;
+        }
+
+
+        .fa-star:before {
+            content: "\f005";
+            background-color: #428BCA;
+            border-radius: 50%;
+            color: white;
+            font-size: 46px;
+            padding: 46px 64px;
+        }
+
+        .card-title{
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .card-body{
+            margin-top: 55px;
         }
     }
 
